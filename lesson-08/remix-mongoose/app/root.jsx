@@ -34,7 +34,10 @@ export default function App() {
       <body className="bg-slate-100 text-slate-800 font-sans p-4">
         <header className="pb-3 mb-4 border-b-2">
           <Link to="/" className="hover:underline text-blue-600">
-            Home
+            Home &nbsp;
+          </Link>
+          <Link to="/books/new" className="hover:underline text-blue-600">
+            New book
           </Link>
         </header>
         <Outlet />

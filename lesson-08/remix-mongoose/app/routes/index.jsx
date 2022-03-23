@@ -23,7 +23,7 @@ export default function Index() {
               <Link
                 to={`/books/${book._id}`}
                 className="text-blue-600 hover:underline">
-                {book.title}
+                {book.title}, {book.author}
               </Link>
             </li>
           );
@@ -32,3 +32,20 @@ export default function Index() {
     </div>
   );
 }
+
+// export function ErrorBoundary({ error }) {
+//   console.error(error);
+//   return (
+//     <html>
+//       <head>
+//         <title>Oh no!</title>
+//         <Meta />
+//         <Links />
+//       </head>
+//       <body>
+//         {/* add the UI you want your users to see */}
+//         <Scripts />
+//       </body>
+//     </html>
+//   );
+// }
